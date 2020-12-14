@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  font-family: Montserrat, sans-serif;
+}
+body {
+  background-color: #1d2329;
+}
+.landing {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  color: #59626f;
+}
+.landing-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+input {
+  border: 0px;
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color: #ededed;
+  outline: none;
+}
+
+.container input {
+  border: 2px solid #525c68;
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color: #1d2329 !important ;
+  outline: none;
+  width: 100%;
+  color: #525c68;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #16191c;
+  color: #525c68;
+  z-index: -1;
+}
+.sidebar ul {
+  list-style: none;
+  font-weight: 700;
+}
+
+.admin-navbar {
+  width: 100vw;
+  background-color: #16191c;
+  color: #525c68;
+  border-bottom: 3px solid #1d2329;
+}
+
+.list-item {
+  height: 50px;
+  list-style: none;
+}
+.list-item:nth-child(2n-1) {
+  background-color: #181818;
+}
+
+button i {
+  color: #8e51c7;
+}
+
+.custom-file-input {
+  background-color: #16191c;
+}
