@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'https://yukiao-lib.herokuapp.com/';
+	public $baseURL = 'http://yukiao-lib.herokuapp.com/';
 
 	/*
 	|--------------------------------------------------------------------------
