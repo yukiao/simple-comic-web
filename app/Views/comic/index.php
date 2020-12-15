@@ -2,6 +2,14 @@
 
 <?= $this->section('content'); ?>
     <div class='container '>
+
+        <br>
+        <div aria-label="breadcrumb ">
+            <ol class="breadcrumb mt-3">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Comic</li>
+            </ol>
+        </div>
         <form class='form-inline px-5 my-5'>
             <input class='form-control flex-fill' type="text" placeholder="Search comic" />
             <a class='btn btn-primary' style="background-color:#8e51c7"><i class='fas fa-search'></i></a>
@@ -14,7 +22,7 @@
         <?php endif; ?>
         <div class="row">
             <?php foreach($komik as $k): ?>
-            <div class="col-lg-3 col-md-4 col-6 comic" id="<?= $k['id']; ?>" data-toggle="modal" data-target="#exampleModal">
+            <div class="col-lg-3 col-md-4 col-6 comic mb-5" id="<?= $k['id']; ?>" data-toggle="modal" data-target="#exampleModal">
                 <div style="height:350px; width:100%">
                     <img src ="/images/<?= $k['cover']; ?>" class="w-100" style="height: 100% ;object-fit:cover"/>
                 </div>

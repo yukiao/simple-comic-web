@@ -20,13 +20,20 @@
         <div class="form-group row">
             <label for="author" class="col-sm-2 col-form-label"><strong>Author</strong></label>
             <div class="col-sm-10">
-                <input type="text"  id="author" name="penulis" value='<?= old('penulis'); ?>'>
+                <input type="text" class="form-control" id="author" name="penulis" value='<?= old('penulis'); ?>'>
             </div>
         </div>
         <div class="form-group row">
             <label for="publisher" class="col-sm-2 col-form-label"><strong>Publisher</strong></label>
             <div class="col-sm-10">
-                <input type="text"  id="publisher" name="penerbit" value='<?= old('penerbit'); ?>'>
+                <input type="text" class="form-control" id="publisher" name="penerbit" value='<?= old('penerbit'); ?>'>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="synopsis" class="col-sm-2 col-form-label"><strong>Synopsis</strong></label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="synopsis" name="synopsis" value='<?= old('synopsis'); ?>'>
             </div>
         </div>
 
@@ -48,19 +55,14 @@
             </div>
         </div>
 
-        <div class="form-group row">
-            <label for="synopsis" class="col-sm-2 col-form-label"><strong>Synopsis</strong></label>
-            <div class="col-sm-10">
-                <input type="text"  id="synopsis" name="synopsis" value='<?= old('synopsis'); ?>'>
-            </div>
-        </div>
+        
         <div class="invalid-feedback">
                 <?= $validation->getError('cover'); ?>
             </div>
 
         <div class="form-group row">
             <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary d-block mt-3" style="background-color: #8e51c7;">Sign in</button>
+                <button type="submit" class="btn btn-primary d-block mt-3" style="background-color: #8e51c7;">Create</button>
             </div>
         </div>
     </form>

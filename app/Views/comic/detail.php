@@ -3,6 +3,15 @@
 <?= $this->section('content'); ?>
 
     <div class="container">
+    <br>
+    <div aria-label="breadcrumb ">
+        <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/comic">Comic</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><?= $komik['judul']; ?></li>
+        </ol>
+    </div>
+
         <h2 class="mt-5" 
             data-aos="fade-down" 
             data-aos-delay="500"
@@ -10,7 +19,7 @@
             <?= $komik['judul']; ?>
         </h2>
         <div class="border-top mt-3 mb-5 "></div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-12 col-md-4 ">
                 <img src="/images/<?= $komik['cover']; ?>"
                     data-aos="fade-right"

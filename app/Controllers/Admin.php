@@ -44,6 +44,18 @@ class Admin extends BaseController{
                     'is_image' => 'Not an image',
                     'mime_in' => 'Not and image',
                 ]
+                ],
+            'penulis' => [
+                'rules'=> 'required',
+                'errors'=> ['required' => '{field} must be type']
+            ],
+            'penerbit' => [
+                'rules'=> 'required',
+                'errors'=> ['required' => '{field} must be type']
+            ],
+            'synopsis' => [
+                'rules'=> 'required',
+                'errors'=> ['required' => '{field} must be type']
             ]
         ])){
             // $validation = \Config\Services::validation();
@@ -134,7 +146,19 @@ class Admin extends BaseController{
                     'is_image' => 'Not an image',
                     'mime_in' => 'Not and image',
                 ]
-            ]
+                ],
+                'penulis' => [
+                    'rules'=> 'required',
+                    'errors'=> ['required' => '{field} must be type']
+                ],
+                'penerbit' => [
+                    'rules'=> 'required',
+                    'errors'=> ['required' => '{field} must be type']
+                ],
+                'synopsis' => [
+                    'rules'=> 'required',
+                    'errors'=> ['required' => '{field} must be type']
+                ]
         ])){
             return redirect()->to('/admin/edit/'.$this->request->getVar('slug'))->withInput();
         }
