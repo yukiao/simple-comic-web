@@ -20,7 +20,7 @@
                 <li class="nav-item dropdown d-flex align-items-center">
                     <span class="avatar"><i class='fas fa-user text-white'></i></span>
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Admin
+                    <?= $_SESSION['user_name']; ?>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="/">Home</a>
