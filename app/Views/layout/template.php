@@ -16,8 +16,7 @@
       font-family: 'Montserrat'
     }
       nav{
-        height: 10vh;
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
       .carousel-title{
         font-size: 3rem
@@ -77,6 +76,10 @@
         border: none;
         outline: none;
       }
+      .background-header{
+        background-color: #8e51c7;
+      }
+
     </style>
   </head>
   <body>
@@ -98,12 +101,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/comic">Comic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/about">About</a>
           </li>
         </ul>
       </div>

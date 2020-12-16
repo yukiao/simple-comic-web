@@ -20,7 +20,7 @@
                 <?= session()->getFlashdata('pesan'); ?>
             </div>
         <?php endif; ?>
-        <div class="row">
+        <div class="row mt-3">
             <?php foreach($komik as $k): ?>
             <div class="col-lg-3 col-md-4 col-6 comic mb-5" id="<?= $k['id']; ?>" data-toggle="modal" data-target="#exampleModal">
                 <div style="height:350px; width:100%">
