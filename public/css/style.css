@@ -9,3 +9,12 @@
 .breadcrumb-item * {
   font-size: 2rem !important;
 }
+
+a.search-button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #8e51c7;
+  color: white  ;
+}
+

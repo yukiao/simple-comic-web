@@ -12,9 +12,20 @@ class Comic extends BaseController{
         $this->komikModel = new KomikModel();
     }
     public function index(){
+        $keyword = $this->request->getVar("keyword");
+
+        if($keyword){
+            $komik = $this->komikModel->search($keyword);
+        }else{
+            $komik = $this->komikModel;
+        }
+
         $data = [
             'title' => 'Daftar Komik',
-            'komik' => $this->komikModel->getComic()
+            // 'komik' => $this->komikModel->getComic()
+            'komik' => $komik->paginate(8, 'bootstrap'),
+            'pager' => $this->komikModel->pager
+
         ];
 
         return view('comic/index', $data);

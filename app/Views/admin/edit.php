@@ -22,20 +22,29 @@
         <div class="form-group row">
             <label for="author" class="col-sm-2 col-form-label"><strong>Author</strong></label>
             <div class="col-sm-10">
-                <input type="text"  id="author" class="form-control" name="penulis" value='<?= (old('penulis')) ? old('penulis') : $komik['penulis'] ?>'>
+                <input type="text"  id="author" class="form-control <?= ($validation->hasError('penulis'))?' is-invalid':''; ?>" name="penulis" value='<?= (old('penulis')) ? old('penulis') : $komik['penulis'] ?>'>
+                <div class="invalid-feedback">
+                <?= $validation->getError('penulis'); ?>
+            </div>
             </div>
         </div>
         <div class="form-group row">
             <label for="publisher" class="col-sm-2 col-form-label"><strong>Publisher</strong></label>
             <div class="col-sm-10">
-                <input type="text"  id="publisher" class="form-control" name="penerbit" value='<?= (old('penerbit')) ? old('penerbit') : $komik['penerbit'] ?>'>
+                <input type="text"  id="publisher" class="form-control <?= ($validation->hasError('penerbit'))?' is-invalid':''; ?>" name="penerbit" value='<?= (old('penerbit')) ? old('penerbit') : $komik['penerbit'] ?>'>
+                <div class="invalid-feedback">
+                    <?= $validation->getError('penerbit'); ?>
+                </div>
             </div>
         </div>
 
         <div class="form-group row">
             <label for="synopsis" class="col-sm-2 col-form-label"><strong>Synopsis</strong></label>
             <div class="col-sm-10">
-                <input type="text"  id="synopsis" class="form-control" name="synopsis" value='<?= (old('synopsis')) ? old('synopsis') : $komik['synopsis'] ?>'>
+                <input type="text"  id="synopsis" class="form-control <?= ($validation->hasError('synopsis'))?' is-invalid':''; ?>" name="synopsis" value='<?= (old('synopsis')) ? old('synopsis') : $komik['synopsis'] ?>'>
+                <div class="invalid-feedback">
+                    <?= $validation->getError('synopsis'); ?>
+                </div>
             </div>
         </div>
         <div class="form-group row">

@@ -3,16 +3,12 @@
 <?= $this->section('content'); ?>
 
 <div class="container mt-3">
-    <h3>Comic List</h3>
+    <h3 class="my-3">Comic List</h3>
     <?php if(session()->getFlashdata('pesan')) : ?>
             <div class="alert alert-success" role="alert">
                 <?= session()->getFlashdata('pesan'); ?>
             </div>
     <?php endif; ?>
-    <a class="btn btn-danger my-3" href='/login/logout'>
-        <i class="fas fa-sign-out-alt"></i>
-        Logout
-    </a>
 
     <a class="btn btn-primary my-3 create-btn" href='/admin/create'>
         <i class='fas fa-plus' style="font-size: 1.5rem"></i>

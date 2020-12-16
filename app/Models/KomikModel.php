@@ -11,6 +11,11 @@ class KomikModel extends Model{
     ];
     protected $createdField = 'create_at';
 
+    public function search($keyword)
+    {
+        return $this->table('comic')->like('judul',$keyword);
+    }
+
     public function getComic($slug = false)
     {
         if($slug == false)

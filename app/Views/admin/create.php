@@ -20,20 +20,29 @@
         <div class="form-group row">
             <label for="author" class="col-sm-2 col-form-label"><strong>Author</strong></label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="author" name="penulis" value='<?= old('penulis'); ?>'>
+                <input type="text" class="form-control <?= ($validation->hasError('penulis'))?' is-invalid':''; ?>" id="author" name="penulis" value='<?= old('penulis'); ?>'>
+                <div class="invalid-feedback">
+                    <?= $validation->getError('penulis'); ?>
+                </div>
             </div>
         </div>
         <div class="form-group row">
             <label for="publisher" class="col-sm-2 col-form-label"><strong>Publisher</strong></label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="publisher" name="penerbit" value='<?= old('penerbit'); ?>'>
+                <input type="text" class="form-control <?= ($validation->hasError('penerbit'))?' is-invalid':''; ?>" id="publisher" name="penerbit" value='<?= old('penerbit'); ?>'>
+                <div class="invalid-feedback">
+                    <?= $validation->getError('penerbit'); ?>
+                </div>
             </div>
         </div>
 
         <div class="form-group row">
             <label for="synopsis" class="col-sm-2 col-form-label"><strong>Synopsis</strong></label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="synopsis" name="synopsis" value='<?= old('synopsis'); ?>'>
+                <input type="text" class="form-control <?= ($validation->hasError('synopsis'))?' is-invalid':''; ?>" id="synopsis" name="synopsis" value='<?= old('synopsis'); ?>'>
+                <div class="invalid-feedback">
+                    <?= $validation->getError('synopsis'); ?>
+                </div>
             </div>
         </div>
 

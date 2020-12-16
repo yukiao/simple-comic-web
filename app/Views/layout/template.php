@@ -32,6 +32,10 @@
         color: #8e51c7 !important;
         font-weight: 700 !important;
       }
+      li.active a.page-link{
+        color: white !important;
+        background-color: #8e51c7 !important;
+      }
       td img{
         width: 100px;
       }
@@ -40,6 +44,38 @@
       }
       p{
         margin-bottom: 0;
+      }
+      button.search-button {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: #8e51c7;
+        color: white  ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: none;
+      }
+      button.search-button:hover{
+        cursor: pointer;
+      }
+      .search-form{
+        height: 50px;
+        margin: auto;
+        border-radius: 50px;
+        display: flex;
+        border: 2px solid #525c68;
+        border-right: none;
+        padding-left: 20px;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+      }
+      .search-input{
+        border: none;
+        outline: none;
       }
     </style>
   </head>

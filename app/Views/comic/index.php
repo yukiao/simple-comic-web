@@ -10,9 +10,9 @@
                 <li class="breadcrumb-item active" aria-current="page">Comic</li>
             </ol>
         </div>
-        <form class='form-inline px-5 my-5'>
-            <input class='form-control flex-fill' type="text" placeholder="Search comic" />
-            <a class='btn btn-primary' style="background-color:#8e51c7"><i class='fas fa-search'></i></a>
+        <form class='search-form my-5' action="" method="POST">
+            <input class='search-input flex-fill' type="text" placeholder="Search comic" name="keyword" />
+            <button class="search-button" type="submit"><i class="fas fa-search"></i></button>
         </form>
         <h2>Comic List</h2>
         <?php if(session()->getFlashdata('pesan')) : ?>
@@ -30,6 +30,7 @@
             </div>
             <?php endforeach; ?>
         </div>
+        <?= $pager->links('bootstrap','bootstrap_pagination'); ?>
     </div>
 
     <!-- Modal -->
@@ -74,7 +75,6 @@
     <script type="text/javascript">
 
         var passedArray = <?php echo json_encode($komik); ?>;
-        console.log(passedArray[0]);
 
         const comics = document.querySelectorAll('.comic');
         for(let i of comics){

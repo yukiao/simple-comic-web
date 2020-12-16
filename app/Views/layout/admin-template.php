@@ -9,9 +9,29 @@
         <title><?= $title; ?></title>
     </head>
     <body>
-        <nav class="admin-navbar d-flex align-items-center px-3 py-3">
-            <i class="fas fa-bars mr-auto"></i>
-        </nav>
+    <nav data-aos="fade-down" 
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+        
+        <a class="navbar-brand" href="#">ComicID</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <span class="avatar"><i class='fas fa-user text-white'></i></span>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/">Home</a>
+                    <a class="dropdown-item" href="/comic">Comic List</a>
+                    <a class="dropdown-item" href="/login/logout">Logout</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
         <!-- <div class='sidebar'>
             <ul class="mt-5 pt-5">
                 <li class="mb-3"><i class="fas fa-plus mr-2"></i> Create</li>
