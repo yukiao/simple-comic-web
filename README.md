@@ -73,3 +73,6 @@ Additionally, make sure that the following extensions are enabled in your PHP:
   > php spark serve
 - Open your browser on
   > http://localhost:8080/
+  
+## Demo
+  http://comicid.herokuapp.com/
