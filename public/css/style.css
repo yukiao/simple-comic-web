@@ -1,20 +1,68 @@
-.sampul {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+  font-family: "Montserrat";
+}
+nav {
+  font-size: 1rem;
+}
+.carousel-title {
+  font-size: 3rem;
+}
+.carousel-text {
+  font-size: 2rem;
+}
+li a {
+  color: #8e51c7 !important;
+}
+li a:hover {
+  color: #8e51c7 !important;
+  font-weight: 700 !important;
+}
+li.active a.page-link {
+  color: white !important;
+  background-color: #8e51c7 !important;
+}
+td img {
   width: 100px;
 }
-
 .table > tbody > tr > * {
   vertical-align: middle;
 }
-
-.breadcrumb-item * {
-  font-size: 2rem !important;
+p {
+  margin-bottom: 0;
 }
-
-a.search-button {
-  height: 30px;
-  width: 30px;
+button.search-button {
+  height: 50px;
+  width: 50px;
   border-radius: 50px;
   background-color: #8e51c7;
-  color: white  ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
 }
-
+button.search-button:hover {
+  cursor: pointer;
+}
+.search-form {
+  height: 50px;
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  border: 2px solid #525c68;
+  border-right: none;
+  padding-left: 20px;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+.search-input {
+  border: none;
+  outline: none;
+}
+.background-header {
+  background-color: #8e51c7;
+}

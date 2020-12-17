@@ -15,7 +15,7 @@
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
         
-        <a class="navbar-brand" href="#">ComicID</a>
+        <a class="navbar-brand" href="/">ComicID</a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown d-flex align-items-center">
                     <span class="avatar"><i class='fas fa-user text-white'></i></span>

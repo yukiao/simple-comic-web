@@ -9,87 +9,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
     <title><?= $title ;?></title>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-    *{
-      font-family: 'Montserrat'
-    }
-      nav{
-        font-size: 1rem;
-      }
-      .carousel-title{
-        font-size: 3rem
-      }
-      .carousel-text{
-        font-size: 2rem
-      }
-      li a{
-        color: #8e51c7 !important;
-      }
-      li a:hover{
-        color: #8e51c7 !important;
-        font-weight: 700 !important;
-      }
-      li.active a.page-link{
-        color: white !important;
-        background-color: #8e51c7 !important;
-      }
-      td img{
-        width: 100px;
-      }
-      .table > tbody > tr > *{
-        vertical-align: middle;
-      }
-      p{
-        margin-bottom: 0;
-      }
-      button.search-button {
-        height: 50px;
-        width: 50px;
-        border-radius: 50px;
-        background-color: #8e51c7;
-        color: white  ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        border: none;
-      }
-      button.search-button:hover{
-        cursor: pointer;
-      }
-      .search-form{
-        height: 50px;
-        margin: auto;
-        border-radius: 50px;
-        display: flex;
-        border: 2px solid #525c68;
-        border-right: none;
-        padding-left: 20px;
-        align-items: center;
-        width: 100%;
-        margin: auto;
-        justify-content: space-between;
-      }
-      .search-input{
-        border: none;
-        outline: none;
-      }
-      .background-header{
-        background-color: #8e51c7;
-      }
-
-    </style>
   </head>
   <body>
-    <nav data-aos="fade-down" 
+    <nav data-aos="fade-down"
       data-aos-delay="100"
       data-aos-duration="1000"
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
     
-      <a class="navbar-brand" href="#">ComicID</a>
+      <a class="navbar-brand" href="/">ComicID</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
