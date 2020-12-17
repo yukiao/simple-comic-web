@@ -68,7 +68,7 @@
         border-right: none;
         padding-left: 20px;
         align-items: center;
-        width: 80%;
+        width: 100%;
         margin: auto;
         justify-content: space-between;
       }
